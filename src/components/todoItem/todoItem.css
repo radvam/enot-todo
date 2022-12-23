@@ -1,0 +1,59 @@
+.text-block {
+  font-family: "Actor";
+  font-style: normal;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.status {
+  width: 5px;
+  height: 40px;
+  background-color: #a9a9a9;
+  border-radius: 3px;
+}
+
+.item-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.item-header {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  height: fit-content;
+  color: #f4f4f4;
+}
+
+.description {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.6);
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.priority-1 {
+  background-color: #ff0000;
+}
+
+.priority-2 {
+  background-color: #366eff;
+}
+
+.priority-3 {
+  background-color: #ffeb33;
+}

@@ -1,0 +1,21 @@
+.enableNewsLabel {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.settingsBlockHeader {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.text {
+  font-family: "Actor";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: #282828;
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Actor";
+  src: url("../../assets/fonts/Actor-Regular.ttf");
+}
+
+.todo-header {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+.header {
+  font-family: "Actor";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  color: #f4f4f4;
+}

@@ -1,0 +1,44 @@
+.newsContainer {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 50px;
+  background-color: #282828;
+  box-shadow: 16px 16px 20px rgba(0, 0, 0, 0.15),
+    -8px -8px 20px rgba(255, 255, 255, 0.05);
+  border-radius: 25px;
+  font-family: "Actor";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+
+.newsItem {
+  height: 40px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.newsItem {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  animation: text 150s infinite linear;
+  padding-left: 100%;
+  white-space: nowrap;
+}
+
+@keyframes text {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
