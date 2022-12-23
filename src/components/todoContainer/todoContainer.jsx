@@ -5,11 +5,13 @@ import CustomizedAccordions from "../accordion/accordion";
 import data from "../../assets/data/data";
 import NewsBlock from "../newsBlock/newsBlock";
 import { Context } from "../../Context";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 import "./todoContainer.css";
 
 const TodoContainer = () => {
   const { news } = useContext(Context);
+  const queryClient = new QueryClient();
 
   return (
     <div className="todo-container">
@@ -23,7 +25,13 @@ const TodoContainer = () => {
             return <CustomizedAccordions key={id} date={date} list={list} />;
           }
         })}
-      {news && <NewsBlock />}
+      {news && (
+        <div>
+          <QueryClientProvider client={queryClient}>
+            <NewsBlock />
+          </QueryClientProvider>
+        </div>
+      )}
     </div>
   );
 };

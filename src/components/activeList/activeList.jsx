@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState, useMemo } from "react";
 import Checkbox from "@mui/material/Checkbox";
 import TodoList from "../todoList/todoList";
 
 import "./activeList.css";
 
 const ActiveList = ({ date, list }) => {
-  const [values, setList] = React.useState(list);
+  const [values, setList] = useState(list);
 
-  const isTasksDone = React.useMemo(
+  const isTasksDone = useMemo(
     () => values.every(({ completed }) => completed),
     [values]
   );
